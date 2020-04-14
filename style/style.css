@@ -1,0 +1,80 @@
+@font-face {
+    src: url(../fonts/IRANSANSWEB.TTF);
+    font-family: IRANSANS;
+    font-weight: normal;
+}
+
+@font-face {
+    src: url(../fonts/IRANSANSWEB_BOLD.TTF);
+    font-family: IRANSANSBOLD;
+    font-weight: bold;
+}
+
+@font-face {
+    src: url(../fonts/IRANSANSWEB_LIGHT.TTF);
+    font-family: IRANSANSLIGHT;
+    font-weight: lighter;
+}
+
+
+body {
+    height: 100vh;
+    overflow-y: hidden;
+    background-image: linear-gradient(to right, #ffc3a0 0%, #ffafbd 100%);
+    background-repeat: repeat;
+    animation: moving 15s linear both infinite;
+    background-size: 400% 400%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main img {
+    width: 256px;
+}
+
+main .title {
+    font-family: IRANSANS;
+    color: white;
+    margin: 40px;
+    font-size: 38px;
+}
+
+.stats {
+    display: flex;
+    flex-direction: row;
+    direction: rtl;
+    text-align: center;
+}
+
+.stats span {
+    color: white;
+    font-size: 26px;
+    font-family: IRANSANSBOLD;
+}
+
+.stats .statstxt {
+    color: white;
+    font-size: 26px;
+    font-family: IRANSANSBOLD;
+
+}
+
+
+
+
+@keyframes moving {
+    0%{background-position:0% 88%}
+    50%{background-position:100% 13%}
+    100%{background-position:0% 88%}
+}
+
