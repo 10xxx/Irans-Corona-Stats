@@ -39,14 +39,14 @@ main {
 }
 
 main img {
-    width: 256px;
+    width: 30%;
 }
 
 main .title {
     font-family: IRANSANS;
     color: white;
     margin: 40px;
-    font-size: 38px;
+    font-size: 220%;
 }
 
 .stats {
@@ -60,20 +60,20 @@ main .title {
 
 .stats span {
     color: white;
-    font-size: 26px;
+    font-size: 110%;
     font-family: IRANSANSBOLD;
 }
 
 .stats .statstxt {
     color: white;
-    font-size: 24px;
+    font-size: 110%;
     font-family: IRANSANSBOLD;
 
 }
 
 footer {
     position:fixed;
-    bottom:30px;
+    bottom:2%;
     text-align: center;
 }
 
@@ -82,6 +82,7 @@ footer span {
     color: white;
     direction: rtl;
     font-family: IRANSANS;
+    font-size: 80%;
 }
 
 footer .heart {
