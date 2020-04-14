@@ -7,31 +7,42 @@
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
     <main id="main">
-
-        <img src="./img/map-pic.png" alt="Map Pic">
-        <h2 class="title">آمار دقیق کرونا در ایران</h2>
-
+        <img src="./img/map-pic.png" alt="Map Pic" data-aos="fade-down">
+        <h2 class="title" data-aos="fade-up">آمار دقیق کرونا در ایران</h2>
     </main>
 
-    <div class="stats" id="confirmed">
-        <span> تعداد کل: &nbsp; </span>
+    <div class="statss" >
+        <div class="stats" id="confirmed" data-aos="fade-right">
+            <span> تعداد کل: &nbsp; </span>
+        </div>
+
+        <div class="stats" id="deaths" data-aos="fade-left">
+            <span> تعداد فوتی ها: &nbsp; </span>
+        </div>
+
+        <div class="stats" id="recovered" data-aos="fade-right">
+            <span> تعداد درمان شدگان: &nbsp; </span>
+        </div>
     </div>
 
-    <div class="stats" id="deaths">
-        <span> تعداد فوتی ها: &nbsp; </span>
-    </div>
-
-    <div class="stats" id="recovered">
-        <span> تعداد درمان شدگان: &nbsp; </span>
-    </div>
+    <footer>
+        <span class="txt">!این آمار بصورت روزانه آپدیت خواهد شد</span> <br> 
+        <span> <span class="heart">❤️</span> ساخته شده با </span><br>
+        <span>توسط <a href="https://twitter.com/ModestReza">رضا آقاجانی</a>  </span>
+    </footer>
 
 
     
 
     <script src="./js/script.js" type="module"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
