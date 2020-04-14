@@ -53,7 +53,9 @@ main .title {
     display: flex;
     flex-direction: row;
     direction: rtl;
+    justify-content: center;
     text-align: center;
+
 }
 
 .stats span {
@@ -64,10 +66,28 @@ main .title {
 
 .stats .statstxt {
     color: white;
-    font-size: 26px;
+    font-size: 24px;
     font-family: IRANSANSBOLD;
 
 }
+
+footer {
+    position:fixed;
+    bottom:30px;
+    text-align: center;
+}
+
+
+footer span {
+    color: white;
+    direction: rtl;
+    font-family: IRANSANS;
+}
+
+footer .heart {
+    animation: pump 1s linear infinite;
+}
+
 
 
 
@@ -76,5 +96,11 @@ main .title {
     0%{background-position:0% 88%}
     50%{background-position:100% 13%}
     100%{background-position:0% 88%}
+}
+
+@keyframes pump {
+    0% {font-size: 15px;}
+    50% {font-size: 18px;}
+    100% {font-size: 15px;}
 }
 
