@@ -8,21 +8,12 @@ export function stats() {
         var data = JSON.parse(this.response)
     if (request.status >= 200 && request.status < 400) {
         var t = data.pop()
-        console.log(t)
-        var y = document.createElement("p")
-        y.innerHTML = t.Confirmed + "  &nbsp; </br> "
-        y.className = "statstxt confirmedtxt"
-        document.getElementById("confirmed").appendChild(y)
+        document.getElementById("total").innerText = t.Confirmed
 
-        var z = document.createElement("p")
-        z.innerHTML = t.Deaths + "  	&nbsp; </br> "
-        z.className = "statstxt deathstxt"
-        document.getElementById("deaths").appendChild(z)
+        document.getElementById("deaths").innerText = t.Deaths 
 
-        var x = document.createElement("p")
-        x.innerHTML = t.Recovered + "  	&nbsp; </br> "
-        x.className = "statstxt recoveredtxt"
-        document.getElementById("recovered").appendChild(x)
+        document.getElementById("recovered").innerText = t.Recovered
+
     } else {
         const errorMessage = document.createElement('marquee')
         errorMessage.textContent = `Gah, it's not working!`
